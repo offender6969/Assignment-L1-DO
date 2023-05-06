@@ -1,0 +1,31 @@
+1. Clone the repository
+
+    First, clone the repository from Github. It is recommended to fork the repository to your Github account before cloning it to your system.
+    Use the following command to clone the forked repository: git clone https://github.com/noobkanger/Assignment-L1-DO.git
+    Use the ls command to confirm that all the files have been cloned.
+
+2.  Install Docker
+
+    Update your system by running the following command: sudo apt update -y
+    Install Docker by running the following command: sudo apt install docker.io
+
+3. Move to the app directory
+
+    Move the aesthisia-demo directory to your home directory by running the following command: mv aesthisia-demo ~
+    Move to your home directory by running the following command: cd ~
+    Access the aesthisia-demo directory by running the following command: cd aesthisia-demo
+
+4. Write a Dockerfile
+
+    Use a text editor of your choice (such as nano or vi) to create a new file called Dockerfile in the aesthisia-demo directory.
+
+5. Build a Docker image
+
+    Use the following command to build a Docker image from the Dockerfile: docker build -t react_project . (the dot at the end tells Docker that the Dockerfile is in the current directory)
+    Wait for the image to build.
+
+6. Run the container
+
+    Use the following command to run the container in detached mode on port 3000: docker run -d -p 3000:3000 --name react react_project
+    The React app should now be running in a Docker container.
+    Access the app by visiting http://localhost:3000 in your web browser.
