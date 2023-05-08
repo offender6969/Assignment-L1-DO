@@ -29,3 +29,7 @@
     Use the following command to run the container in detached mode on port 3000: docker run -d -p 3000:3000 --name react react_project
     The React app should now be running in a Docker container.
     Access the app by visiting http://localhost:3000 in your web browser.
+
+
+    # url of working instance
+    http://3.110.186.44:3000/
